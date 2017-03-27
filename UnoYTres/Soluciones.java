@@ -49,8 +49,8 @@ public class Soluciones {
         numero-=ultimoNumero;
         numero+=primerNumero;
         //Inicio del numero 
-        numero-=Math.pow(10*primerNumero, digitos-1);
-        numero+=Math.pow(10*ultimoNumero, digitos-1);
+        numero-=Math.pow(10, digitos-1)*primerNumero;
+        numero+=Math.pow(10, digitos-1)*ultimoNumero;
         return numero;
     }
 }
